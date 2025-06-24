@@ -20,6 +20,7 @@
     <link rel="modulepreload" href="https://tailwindcss.com/plus-assets/build/assets/tabs-DtPzqVGq.js">
     <link rel="modulepreload" href="https://tailwindcss.com/plus-assets/build/assets/iframe-CBshCjZa.js">
     <script type="module" src="https://tailwindcss.com/plus-assets/build/assets/iframe-react-Bvna8X_f.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style>
       @layer properties {
@@ -1183,7 +1184,7 @@
             className: "xxn"
           }, "Your Company"), o.default.createElement("img", {
             alt: "Your Company",
-            src: "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600",
+            src: "logo.png",
             className: "xyn xyq"
           })), o.default.createElement("button", {
             type: "button",
@@ -5548,6 +5549,7 @@
       initial-value: solid
     }
   </style>
+  
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1241.0" data-gr-ext-installed="" class="">
@@ -5555,13 +5557,59 @@
     <div class="xzi">
       <header class="xxo xxs xxu xxy">
         <div class="xyc xyt">
-          <div class="xzq xzw ybs yby ybz">
-            <nav aria-label="Global" class="xyi xyw xyx ybu"><a href="#" class="xxz xzl"><span class="xxn">Your Company</span><img alt="Your Company" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&amp;shade=600" class="xyn xyq"></a><button type="button" class="xya xzf xzm yaj ybn"><span class="xxn">Open main menu</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="xym">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-                </svg></button>
-              <div class="xyk ybk ybm ybv"><a href="#" class="yac yae yak">Product</a><a href="#" class="yac yae yak">Features</a><a href="#" class="yac yae yak">Marketplace</a><a href="#" class="yac yae yak">Company</a><a href="#" class="yac yae yak">Log in</a></div>
-            </nav>
+  <nav>
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <!-- Mobile menu button -->
+      <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+        <button id="menu-btn" type="button"
+          class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-controls="mobile-menu" aria-expanded="false">
+          <svg id="menu-open" class="block h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg id="menu-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Logo and desktop menu -->
+      <div class="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img class="sm:h-8 h-16  w-auto"
+            src="logo.png"
+            alt="Your Company" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="about.html"  class=" hover:bg-gray-900 hover:text-white text-black px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <a href="pricing.html"
+              class="hover:bg-gray-900 hover:text-white text-black px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+            
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class=" sm:hidden hidden bg-gray-900" id="mobile-menu">
+    <div class="space-y-1 px-2 pt-2 pb-3">
+      <a href="about.html"
+        class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+      <a href="pricing.html"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+    
+     
+    </div>
+  </div>
+</nav>
+
         </div>
       </header>
       <div class="xxq">
@@ -5994,7 +6042,8 @@
           <p class="uhh uhj uhv uis uiy uiz">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
           <div class="uhk uhp uhx"><a href="#" class="uib uig uij uil uit uiv ujf ujg uji ujn ujo ujp">Get started</a></div>
         </div>
-        <div class="uho uic uie uio ukg ukh uki"><img alt="Company name" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&amp;shade=500" class="uhs">
+        <div class="uho uic uie uio ukg ukh uki">
+          <img alt="Company name" src="./logo.png" class="uhs">
           <div class="uhn uhq uhw uhy uke ukf">
             <div class="ujx ujy ukb">
               <div>
@@ -6054,7 +6103,19 @@
       </div>
     </footer>
   </div>
-</body>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuOpenIcon = document.getElementById('menu-open');
+  const menuCloseIcon = document.getElementById('menu-close');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    menuOpenIcon.classList.toggle('hidden');
+    menuCloseIcon.classList.toggle('hidden');
+  });
+</script>
+  </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
 </html>
